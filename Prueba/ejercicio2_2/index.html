@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form class="miFormulario" id="miFormulario">
+        <div class="contenedorInputs">
+
+            <div class="inputs nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+
+            <div class="inputs apellidos">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" required>
+            </div>
+
+            <div class="inputs edad">
+                <label for="edad">Edad</label>
+                <input type="text" name="edad" id="edad" required>
+            </div>
+
+            <div class="inputs opcion">
+                <label for="radioDni">dni</label>
+                <input type="radio" value="dni" name="documento" id="radioDni" checked>
+                <label for="radioNie">Nie</label>
+                <input type="radio" value="nie" name="documento" id="radioNie">
+            </div>
+
+
+            <div id="contenedorDocumento" class="contenedorDocumento">
+
+                <div class="inputs dni" id="contenedorDni">
+                    <label for="dni">DNI</label>
+                    <input type="text" name="dni" id="dni">
+                </div>
+
+                <div class="inputs nie" id="contenedorNie">
+                    <label for="nie">NIE</label>
+                    <input type="text" name="nie" id="nie">
+                </div>
+
+            </div>
+
+            <div class="inputs politica">
+                <label for="check">Politica</label>
+                <input type="checkbox" value="1" name="politica" id="politica" required>
+            </div>
+
+
+        </div>
+
+        <button type="submit">Guardar Datos</button>
+
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
