@@ -42,31 +42,11 @@ function validarFormulario() {
   }
 
   // Habilitar o deshabilitar botón de enviar
-  if (regexEmail.test(emailInput.value) && regexPassword.test(passwordInput.value) && pdf) {
+  if (regexEmail.test(emailInput.value) && regexPassword.test(passwordInput.value) && pdf && checkboxInput.checked) {
     btnEnviar.disabled = false;
   } else {
     btnEnviar.disabled = true;
   }
-
-  /*
-    const checkboxDiv = checkboxInput.parentElement;
-
-    // Mostrar u ocultar textarea según el estado del checkbox
-    if (checkboxInput.checked) {
-        if (!checkboxDiv.querySelector(".mensaje-condiciones")) {
-            let textarea = document.createElement("textarea");
-            textarea.placeholder = "Escribe tu experiencia...";
-            textarea.classList.add("form-control", "mt-2", "mensaje-condiciones");
-            textarea.rows = 3;
-
-            checkboxDiv.insertAdjacentElement("afterend", textarea);
-        }
-    } else {
-        // Borrar textarea si está desmarcado
-        let mensajes = document.querySelectorAll(".mensaje-condiciones");
-        mensajes.forEach(mensaje => mensaje.remove());
-    }
-    */
 }
 
 
@@ -84,6 +64,13 @@ function cambiarColorFondo() {
 formulario.addEventListener("submit", function(e) {
   e.preventDefault();
   alert("Formulario enviado correctamente");
+  formulario.reset();
+  passwordInput.classList.remove("is-valid");
+  emailInput.classList.remove("is-valid");
+  archivoInput.classList.remove("is-valid");
+  btnEnviar.disabled = true;
+  eleccion.value = "white";
+  cambiarColorFondo();
   console.log("Correo:", emailInput.value);
   console.log("Contraseña:", passwordInput.value);
 });

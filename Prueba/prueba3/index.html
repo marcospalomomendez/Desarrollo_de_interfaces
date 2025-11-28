@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="contenedor" class="contenedor">
+        <form id="formulario">
+            <div class="col-auto">
+                <label for="nombre" class="col-form-label">Nombre</label>
+                <input type="text" id="nombre" class="form-control" required>
+            </div>
+            <div class="col-auto">
+                <label for="apellido" class="col-form-label">Apellido</label>
+                <input type="text" id="apellido" class="form-control" required>
+            </div>
+            <div class="col-auto">
+                <label for="password" class="col-form-label" required>Password</label>
+                <input type="password" id="password" class="form-control" aria-describedby="passwordHelpInline">
+                <span id="passwordHelpInline" class="form-text" style="color: white;">
+                    Debe contener entre 8 - 20 caracteres.
+                </span>
+            </div>
+            <div class="col-auto">
+                <label for="dni" class="col-form-label">DNI</label>
+                <input type="text" id="dni" class="form-control" placeholder="12345678A">
+            </div>
+
+            <div class="col-auto">
+                <label for="nie" class="col-form-label">NIE</label>
+                <input type="text" id="nie" class="form-control" placeholder="X1234567L">
+            </div>
+
+            <div class="mb-3 d-flex align-items-center " style="margin-top: 20px;">
+                <label for="fondo" class="form-label me-2 mb-0">Color fondo</label>
+                <input type="color" class="form-control form-control-color" id="fondo" value="#a98484"
+                    title="Elige el color">
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-primary" type="submit" id="enviar" disabledac>Enviar formulario</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

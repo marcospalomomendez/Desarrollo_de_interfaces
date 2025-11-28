@@ -53,5 +53,9 @@ formulario.addEventListener("submit", (e)=>{
 
     localStorage.setItem("formData", JSON.stringify(listaInputs));
     console.log(localStorage.getItem("formData"));
-    formulario.reset();
+
+    setTimeout(() => {
+        formulario.reset();
+        alert("Datos guardados en localStorage y formulario reseteado");
+    }, 1000);
 });
