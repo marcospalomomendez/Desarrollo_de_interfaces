@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <form class="form-control" id="formulario">
+
+            <div class="input-group mb-3">
+                    <label class="input-group-text" for="eleccion">Color Fondo</label>
+                    <select class="form-select" id="eleccion" obligatory>
+                        <option selected value="white">Elige...</option>
+                        <option value="red">Rojo</option>
+                        <option value="green">Verde</option>
+                        <option value="blue">Azul</option>
+                        <option value="yellow">Amarillo</option>
+                        <option value="purple">Morado</option>
+                        <option value="pink">Rosa</option>
+
+                    </select>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="mb-3 input-group">
+                <input type="file" class="form-control" id="archivo" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Experiencia</label>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary" id="enviar" disabled>Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

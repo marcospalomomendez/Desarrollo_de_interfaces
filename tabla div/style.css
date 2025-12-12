@@ -1,0 +1,39 @@
+
+body, body, section{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "a1 a2 a3 a4 a4 a4 a5"
+    "b6 b6 b6 b6 b7 b8 a5"
+    "c9 c10 c10 c10 c10 c10 c10"
+    "c9 d11 d11 d11 d11 d11 d11"
+    "c9 e12 e12 e12 e12 e12 e12"
+    "c9 f13 f13 f13 f13 f13 f13";
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.a1{ grid-area: a1; border: solid black 1px;}
+.a2{ grid-area: a2; border: solid black 1px;}
+.a3{ grid-area: a3; border: solid black 1px;}
+.a4{ grid-area: a4; border: solid black 1px;}
+.a5{ grid-area: a5; border: solid black 1px;}
+.b6{ grid-area: b6; border: solid black 1px;}
+.b7{ grid-area: b7; border: solid black 1px;}
+.b8{ grid-area: b8; border: solid black 1px;}
+.c9{ grid-area: c9; border: solid black 1px;}
+.c10{ grid-area: c10; border: solid black 1px;}
+.d11{ grid-area: d11; border: solid black 1px;}
+.e12{ grid-area: e12; border: solid black 1px;}
+.f13{ grid-area: f13; border: solid black 1px;}

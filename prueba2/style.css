@@ -1,0 +1,29 @@
+    html{
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 4px solid blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedor{
+    background-color: #333;
+    border: 1px solid yellow;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

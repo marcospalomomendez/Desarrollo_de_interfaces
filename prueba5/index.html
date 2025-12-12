@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <form id="formulario">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Escriba el nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Escriba el apellido" required>
+            </div>
+            <div class="mb-3">
+                <label for="dni" class="form-label">DNI</label>
+                <input type="text" class="form-control" id="dni" placeholder="Escriba el DNI" required>
+            </div>
+            <div class="mb-3">
+                <label for="nie" class="form-label">NIE</label>
+                <input type="text" class="form-control" id="nie" placeholder="Escriba el NIE" required>
+            </div>
+            <div class="mb-3">
+                <label for="fecha-nacimiento" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="fecha-nacimiento"
+                    placeholder="Escriba la fecha de nacimiento" required>
+            </div>
+            <div class="mb-3">
+                <label for="num-telefono" class="form-label">Número de Teléfono</label>
+                <input type="tel" class="form-control" id="num-telefono" placeholder="Escriba el número de teléfono"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Escriba el correo electrónico"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="domicilio" class="form-label">Domicilio</label>
+                <input type="text" class="form-control" id="domicilio" placeholder="Escriba el domicilio" required>
+            </div>
+            <div class="mb-3">
+                <label for="localidad" class="form-label">Localidad</label>
+                <input type="text" class="form-control" id="localidad" placeholder="Escriba la localidad" required>
+            </div>
+            <div class="mb-3">
+                <label for="codigo-postal" class="form-label">Código Postal</label>
+                <input type="text" class="form-control" id="codigo-postal" placeholder="Escriba el código postal"
+                    required>
+            </div>
+            <div class="mb-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Elija un grado</option>
+                    <option value="DAW">Desarrollo de Aplicaciones Web</option>
+                    <option value="DAM">Desarrollo de Aplicaciones Multiplataforma</option>
+                    <option value="ASIR">Administración de Sistemas Informáticos en Red</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Escriba la contraseña" required>
+            </div>
+            <div class="mb-3">
+                <label for="password-confirmar" class="form-label">Confirmar Password</label>
+                <input type="password" class="form-control" id="password-confirmar"
+                    placeholder="Escriba la contraseña de nuevo" required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="privacidad" required>
+                <label class="form-check-label" for="privacidad">Acepto los términos y condiciones</label>
+            </div>
+            <button type="submit" class="btn btn-primary" disabled id="boton">Enviar Formulario</button>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
